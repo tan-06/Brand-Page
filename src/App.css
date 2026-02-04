@@ -1,0 +1,116 @@
+@import url('https://fonts.cdnfonts.com/css/satoshi');
+
+
+:root{
+    --red:#d01c28;
+    --gray:#2e2e2e;
+}
+
+*{
+    margin:0;
+}
+
+body {
+  font-family: 'Satoshi', sans-serif;
+}
+
+button {
+    all: unset;
+    padding: 10px 20px;
+    background: var(--red);
+    color: white;
+    font-weight: 500;
+    cursor: pointer;
+    border-radius: 4px;
+    transition: background 0.25s ease, transform 0.2s ease;
+}
+button:hover {
+  background: #8B0000; 
+  color:white;
+}
+
+.category-btn {
+  background: transparent;
+  color: var(--gray);
+  border: 1px solid var(--gray);
+  transition: background 0.25s ease, color 0.25s ease, border 0.25s ease;
+}
+
+.category-btn:hover {
+  background: #2e2e2e;
+  color: #ffffff;
+  border-color: #2e2e2e;
+}
+
+
+.container{
+    margin:0 auto;
+    max-width:1280px;
+    padding:0 24px;
+
+}
+nav{
+    display:flex;
+    justify-content: space-between;
+    height: 72px;
+    align-items:center;
+
+}
+
+nav ul{
+    display:flex;
+    list-style:none;
+    gap:clamp(16px,2vw,32px);
+    font-size:24px;
+}
+nav ul li{
+    text-decoration: none;
+    color: var(--gray);
+    font-weight: 500;
+    position: relative;
+    transition: color 0.25s ease;
+    cursor:default;
+}
+
+nav ul li:hover {
+  color: var(--red);
+}
+
+.hero{
+    display:flex;
+    align-items:center;
+    justify-content: space-between;
+    gap: clamp(40px, 5vw, 120px);
+    min-height: calc(100vh - 72px);
+}
+.hero-content{
+    display:flex;
+    flex-direction:column;
+    gap:36px;
+}
+.hero h1{
+    font-size: clamp(3rem, 4vw, 5rem);
+    line-height: 1.1;
+}
+.hero p{
+    font-weight:600;
+    color:var(--gray);
+    max-width:400px;
+}
+.hero-btn{
+    display:flex;
+    gap:40px;
+   
+}
+.hero-btn button{
+    font-size:24px;
+}
+.shopping p{
+    font-size: 14px;
+    font-weight: 8px;
+
+}
+.brand-icons{
+    display:flex;
+    gap:16px;
+}
